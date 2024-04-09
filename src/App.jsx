@@ -21,12 +21,11 @@ function Counter(){
     <>
       <span className="output">{count}</span>
       <div className="btnContainer">
-        <button className="controlBtn" onclick={() => {setCount(7)}}>+</button>
-        <button className="controlBtn" onclick={() => {setCount(3)}}>-</button>
-        <button className="reset" onclick={() => {setCount(0)}}>Reset</button>
+        <button className="controlBtn" onClick={() => {setCount(count + 1)}}>+</button>
+        <button className="controlBtn" onClick={() => {setCount(count - 1)}}>-</button>
+        <button className="reset" onClick={() => {setCount(0)}}>Reset</button>
       </div>
     </>
-
   )
 }
 
