@@ -15,13 +15,44 @@ body {
   align-items: center;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  margin-right: 20vw;
+.name {
+  font-size: 15vh;
+  margin-bottom: 0;
 }
 
-p{
-  margin: 2vw;
+.projects{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20vh;
 }
 
+.projects > div{
+  max-height: 30vh;
+}
+
+.projects > h3{
+  margin-bottom: 2vh;
+}
+
+.projects > p{
+  margin: 0vh;
+}
+
+.projectCovers{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+
+.iconWrapper{
+  width: 25%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-bottom: 15vh;
+}
+
+.icons{
+  width: 60%;
+  margin: 0;
+}
