@@ -20,14 +20,36 @@ body {
   margin-bottom: 0;
 }
 
+.iconWrapper{
+  width: 30%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.stackWrapper{
+  width: 35%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.icons{
+  width: 60%;
+  margin: 0;
+}
+
+.splash{
+  height: 100vh;
+}
+
+.subline{
+  font-size: 1.5rem;
+}
+
 .projects{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 20vh;
-}
-
-.projects > div{
-  max-height: 30vh;
+  row-gap: 5vh;
+  column-gap: 2vw;
 }
 
 .projects > h3{
@@ -40,19 +62,38 @@ body {
 
 .projectCovers{
   width: 100%;
-  height: 100%;
+  height: 25vh;
   object-fit: cover;
-  margin: 0;
 }
 
-.iconWrapper{
-  width: 25%;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  margin-bottom: 15vh;
+.projectSection{
+  height: 100vh;
+  margin-bottom: 20vh;
 }
 
-.icons{
-  width: 60%;
-  margin: 0;
+.contactSection{
+  height: 100vh;
+}
+
+.projectTitle{
+  font-size: 3rem;
+}
+
+.projectPadding{
+  background-color: #e3e3e3;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+  padding: 1vw;
+}
+
+.projectPadding:hover{
+  background-color: #b5b5b5;
+}
+
+.messageCard{
+  background-color: lightgray;
+  border-radius: 8px;
+  padding: 1vw;
+  margin-bottom: 4vh;
 }

@@ -44,7 +44,7 @@ const projects = [
 
 function ProjectSlide({proj}){
     return(
-      <div>
+      <div className="projectPadding">
         <h3>{proj.title}</h3>
         <a href={proj.link}><img className="projectCovers" src={proj.image}></img></a>
         <p>{proj.subtitle}</p>
@@ -55,6 +55,7 @@ function ProjectSlide({proj}){
 export default function Projects(){
     return(
       <>
+        <h1 className="projectTitle">Projects</h1>
         <div className="projects">
           {projects.map((project) => (
             <ProjectSlide proj={project}></ProjectSlide>
